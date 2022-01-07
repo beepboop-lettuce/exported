@@ -10,3 +10,7 @@ type Employee struct {
 type Office struct {
 	AllStaff []Employee
 }
+
+func (e *Office) All() []Employee {
+	return e.AllStaff
+}

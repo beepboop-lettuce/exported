@@ -11,5 +11,7 @@ var employees = []staff.Employee{
 }
 
 func main() {
-
+	myStaff := staff.Office{
+		AllStaff: employees,
+	}
 }

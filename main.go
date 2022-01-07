@@ -1,6 +1,9 @@
 package main
 
-import "myapp/staff"
+import (
+	"log"
+	"myapp/staff"
+)
 
 var employees = []staff.Employee{
 	{FirstName: "John", LastName: "Smith", Salary: 30000, FullTime: true},
@@ -14,4 +17,10 @@ func main() {
 	myStaff := staff.Office{
 		AllStaff: employees,
 	}
+
+	//myStaff.All()
+
+	//log.Println(myStaff.All())
+	log.Println(myStaff.Overpaid())
+
 }

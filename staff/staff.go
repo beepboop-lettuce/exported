@@ -42,6 +42,12 @@ func (e *Office) Underpaid() []Employee {
 	return underpaid
 }
 
+//this fun has a receiver e. It has access to the values stored in the receiver variable e.
 func (e *Office) notVisible() {
 	log.Println("Hello, world")
+}
+
+//this func has no receiver. Does not have access to any of the values stored in receiver variable e
+func myFunction() {
+	log.Println("I m a function")
 }

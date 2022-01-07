@@ -21,6 +21,8 @@ func main() {
 	//myStaff.All()
 
 	//log.Println(myStaff.All())
+
+	staff.OverpaidLimit = 60000
 	log.Println(myStaff.Overpaid())
 
 }

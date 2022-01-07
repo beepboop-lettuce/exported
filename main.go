@@ -22,7 +22,7 @@ func main() {
 
 	//log.Println(myStaff.All())
 
-	staff.OverpaidLimit = 60000
 	log.Println(myStaff.Overpaid())
+	log.Println("Underpaid staff", myStaff.Underpaid())
 
 }

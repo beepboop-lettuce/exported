@@ -1,5 +1,7 @@
 package staff
 
+import "log"
+
 var OverpaidLimit = 75000
 var UnderPaidLimit = 20000
 
@@ -38,4 +40,8 @@ func (e *Office) Underpaid() []Employee {
 		}
 	}
 	return underpaid
+}
+
+func (e *Office) notVisible() {
+	log.Println("Hello, world")
 }
